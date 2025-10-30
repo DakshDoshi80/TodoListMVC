@@ -1,0 +1,22 @@
+@model TodoListMVC.Models.TodoItem
+@{
+    ViewData["Title"] = "Delete Task";
+}
+<h4>Delete Task</h4>
+<hr />
+<div>
+    <h5>@Model.Title</h5>
+    <p>@Model.Description</p>
+    <dl class="row">
+        <dt class="col-sm-3">Created</dt>
+        <dd class="col-sm-9">@Model.CreatedDate.ToString("yyyy-MM-dd HH:mm")</dd>
+        <dt class="col-sm-3">Completed</dt>
+        <dd class="col-sm-9">@Model.IsCompleted</dd>
+    </dl>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Back</a>
+</form>
