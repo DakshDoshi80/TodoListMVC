@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace TodoListMVC.Migrations
 {
-    public partial class InitialCreate : Migration
+    public class InitialCreateSqlServer : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
