@@ -1,15 +1,15 @@
-TodoListMVC - .NET 6 MVC To-Do List (by Daksh Doshi)
+TodoListMVC - .NET 8 MVC To-Do List (by Daksh Doshi)
 ---------------------------------------------------
 
-Framework: .NET 6.0.422
+Framework: .NET 8.0
 Database: LocalDB (SQL Server)
 
 How to run:
-1. Ensure .NET 6 SDK (6.0.422) and LocalDB are installed.
+1. Ensure .NET 8 SDK (8.0) and LocalDB are installed.
 2. Open the solution TodoListMVC.sln in Visual Studio 2022+ OR use command-line.
 3. From project folder, run:
    dotnet restore
-   dotnet tool install --global dotnet-ef --version 6.0.22   (if you don't have dotnet-ef)
+   dotnet tool install --global dotnet-ef --version 8.0   (if you don't have dotnet-ef)
    dotnet ef database update   (applies included migration and creates DB)
    dotnet run
 
